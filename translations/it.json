@@ -89,6 +89,12 @@
             }
         }
     },
+    "draft": {
+        "submit_for_verification": {
+            "button_text": "Invia per la verifica",
+            "message": "Una volta inviata per la modifica questa bozza non potrà più essere modificata"
+        }
+    },
     "errors": {
         "string": {
             "email": "Deve essere un indirizzo email valido",

@@ -89,6 +89,12 @@
             }
         }
     },
+    "draft": {
+        "submit_for_verification": {
+            "button_text": "Submit for verification",
+            "message": "Once submitted for verification this draft will not be editable"
+        }
+    },
     "errors": {
         "string": {
             "email": "Must be a valid email",
