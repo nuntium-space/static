@@ -1,4 +1,10 @@
 {
+    "admin": {
+        "__title": "Admin",
+        "drafts": {
+            "__title": "Drafts"
+        }
+    },
     "article": {
         "actions": {
             "__title": "Actions"

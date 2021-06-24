@@ -1,4 +1,10 @@
 {
+    "admin": {
+        "__title": "Amministrazione",
+        "drafts": {
+            "__title": "Bozze"
+        }
+    },
     "article": {
         "actions": {
             "__title": "Azioni"
