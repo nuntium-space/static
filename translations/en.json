@@ -103,6 +103,11 @@
             "min": "Too short"
         },
         "custom": {
+            "author": {
+                "invite": {
+                    "must_have_full_name": "You must set your full name in the settings in order to accept this invite"
+                }
+            },
             "bundle": {
                 "already_exists": "A bundle with this name already exists for this organization"
             },

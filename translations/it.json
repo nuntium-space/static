@@ -103,6 +103,11 @@
             "min": "Troppo corto"
         },
         "custom": {
+            "author": {
+                "invite": {
+                    "must_have_full_name": "Devi impostare il tuo nome completo nelle impostazioni per poter accettare questo invito"
+                }
+            },
             "bundle": {
                 "already_exists": "Un bundle con questo nome esiste già per questa organizzazione"
             },
