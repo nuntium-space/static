@@ -1,4 +1,4 @@
-# nuntium static files
+# nuntium-static
 
 ## Test
 
