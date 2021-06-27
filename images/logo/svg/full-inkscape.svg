@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="nuntium-inkscape.svg">
+   sodipodi:docname="full-inkscape.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,7 +88,7 @@
        xml:space="preserve"
        id="flowRoot10-6"
        style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:1066.66674805px;line-height:1.25;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Heavy';letter-spacing:0px;word-spacing:0px;display:inline;fill:#5b2ab1;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,351.63141,-70.711933)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,355.84863,-71.285197)"><flowRegion
          id="flowRegion12-9"
          style="font-size:1066.66674805px;fill:#5b2ab1;fill-opacity:1"><rect
            id="rect14-4"
@@ -98,5 +98,5 @@
            y="586.90668"
            style="font-size:1066.66674805px;fill:#5b2ab1;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara16-2"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:866.66680908px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans Bold';fill:#5b2ab1;fill-opacity:1">nuntium</flowPara></flowRoot>  </g>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:866.66680908px;font-family:'work sans';-inkscape-font-specification:'work sans';fill:#5b2ab1;fill-opacity:1">nuntium</flowPara></flowRoot>  </g>
 </svg>
