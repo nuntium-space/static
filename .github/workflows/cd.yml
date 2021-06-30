@@ -1,0 +1,27 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: deploy
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --delete  # --delete means that files that do not
+                                            # exist in the source folder but exist in
+                                            # the destination folder will be deleted
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.S3_BUCKET_REGION }}
+          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          AWS_S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          SOURCE_DIR: assets
