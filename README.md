@@ -13,19 +13,3 @@ npm install http-server -g
 ```
 http-server assets --cors
 ```
-
-### Deploy to localstack
-
-#### Install [act][act]
-
-See [here](https://github.com/nektos/act#installation).
-
-#### Deploy
-
-Run
-
-```
-act
-```
-
-[act]: https://github.com/nektos/act
