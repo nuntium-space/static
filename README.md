@@ -11,5 +11,21 @@ npm install http-server -g
 ### Serve locally
 
 ```
-http-server <PATH> --cors
+http-server assets --cors
 ```
+
+### Deploy to localstack
+
+#### Install [act][act]
+
+See [here](https://github.com/nektos/act#installation).
+
+#### Deploy
+
+Run
+
+```
+act --secret-file local.env
+```
+
+[act]: https://github.com/nektos/act
