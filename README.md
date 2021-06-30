@@ -11,7 +11,7 @@ npm install http-server -g
 ### Serve locally
 
 ```
-http-server <PATH> --cors
+http-server assets --cors
 ```
 
 ### Deploy to localstack
