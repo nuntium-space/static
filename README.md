@@ -25,7 +25,7 @@ See [here](https://github.com/nektos/act#installation).
 Run
 
 ```
-act --secret-file local.env
+act
 ```
 
 [act]: https://github.com/nektos/act
