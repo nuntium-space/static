@@ -1,4 +1,4 @@
-# nuntium-static
+# static
 
 ## Test
 
