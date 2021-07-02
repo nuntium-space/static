@@ -241,10 +241,6 @@
                 "__title": "Invita autore"
             }
         },
-        "invites": {
-            "__title": "Inviti",
-            "empty": "Non ci sono inviti attivi"
-        },
         "details": {
             "__title": "Dettagli",
             "name": "Nome",
@@ -253,6 +249,11 @@
                 "image": "Immagine"
             }
         },
+        "invites": {
+            "__title": "Inviti",
+            "empty": "Non ci sono inviti attivi"
+        },
+        "public_page": "Vai alla pagina pubblica",
         "verify": {
             "__title": "Verifica",
             "message": {

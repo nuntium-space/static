@@ -241,10 +241,6 @@
                 "__title": "Invite author"
             }
         },
-        "invites": {
-            "__title": "Invites",
-            "empty": "There are no active invites"
-        },
         "details": {
             "__title": "Details",
             "name": "Name",
@@ -253,6 +249,11 @@
                 "image": "Image"
             }
         },
+        "invites": {
+            "__title": "Invites",
+            "empty": "There are no active invites"
+        },
+        "public_page": "Go to the public page",
         "verify": {
             "__title": "Verify",
             "message": {
