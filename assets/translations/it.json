@@ -275,6 +275,9 @@
             "__title": "Azioni",
             "new_article": "Scrivi nuovo articolo"
         },
+        "drafts": {
+            "__title": "Bozze"
+        },
         "how_to_subscribe": "Per vedere gli articoli di <b>{{ PUBLISHER_NAME }}</b> devi abbonarti ad un bundle che include questo editore",
         "new_article": {
             "title": "Titolo",

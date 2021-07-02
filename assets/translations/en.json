@@ -275,6 +275,9 @@
             "__title": "Actions",
             "new_article": "Write new article"
         },
+        "drafts": {
+            "__title": "Drafts"
+        },
         "how_to_subscribe": "In order to see the articles of <b>{{ PUBLISHER_NAME }}</b> you need to subscribe a bundle that includes this publisher",
         "new_article": {
             "title": "Title",
