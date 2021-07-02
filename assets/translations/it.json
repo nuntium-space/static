@@ -100,6 +100,10 @@
             "button_text": "Pubblica",
             "message": "Sei sicuro di voler autorizzare la pubblicazione di questo articolo?"
         },
+        "reject": {
+            "button_text": "Rifiuta",
+            "message": "Spiega perché stai rifiutando questa bozza"
+        },
         "submit_for_verification": {
             "button_text": "Invia per la verifica",
             "message": "Una volta inviata per la modifica questa bozza non potrà più essere modificata"

@@ -100,6 +100,10 @@
             "button_text": "Publish",
             "message": "Are you sure you want to authorize the publishing of this article?"
         },
+        "reject": {
+            "button_text": "Reject",
+            "message": "Please explain why you are rejecting this draft"
+        },
         "submit_for_verification": {
             "button_text": "Submit for verification",
             "message": "Once submitted for verification this draft will not be editable"
