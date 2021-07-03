@@ -238,6 +238,7 @@
         "subtitle": "Il file specificato non è stato trovato in questo sito. Controlla eventuali errori nell'URL e riprova"
     },
     "publisher": {
+        "__title": "Editore",
         "authors": {
             "__title": "Autori",
             "empty": "Non ci sono autori",

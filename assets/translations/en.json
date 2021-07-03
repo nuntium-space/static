@@ -238,6 +238,7 @@
         "subtitle": "The specified file was not found on this website. Please check the URL for mistakes and try again"
     },
     "publisher": {
+        "__title": "Publisher",
         "authors": {
             "__title": "Authors",
             "empty": "There are no authors",
