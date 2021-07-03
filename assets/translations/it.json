@@ -209,6 +209,7 @@
         }
     },
     "organization": {
+        "__title": "Organizzazione",
         "bundles": {
             "__title": "Bundle",
             "archived": "Archiviato",
