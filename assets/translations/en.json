@@ -349,7 +349,10 @@
                 }
             },
             "security": {
-                "__title": "Security"
+                "__title": "Security",
+                "accounts": {
+                    "__title": "Linked accounts"
+                }
             },
             "subscriptions": {
                 "__title": "Subscriptions",

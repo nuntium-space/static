@@ -349,7 +349,10 @@
                 }
             },
             "security": {
-                "__title": "Sicurezza"
+                "__title": "Sicurezza",
+                "accounts": {
+                    "__title": "Account collegati"
+                }
             },
             "subscriptions": {
                 "__title": "Abbonamenti",
