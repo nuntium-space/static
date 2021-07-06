@@ -237,6 +237,9 @@
         "__title": "Page Not Found",
         "subtitle": "The specified file was not found on this website. Please check the URL for mistakes and try again"
     },
+    "privacy": {
+        "__title": "Privacy"
+    },
     "publisher": {
         "__title": "Publisher",
         "authors": {
@@ -387,5 +390,8 @@
         },
         "or": "or",
         "with": "Sign In with"
+    },
+    "terms": {
+        "__title": "Terms"
     }
 }

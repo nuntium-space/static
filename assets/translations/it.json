@@ -237,6 +237,9 @@
         "__title": "Pagina non trovata",
         "subtitle": "Il file specificato non è stato trovato in questo sito. Controlla eventuali errori nell'URL e riprova"
     },
+    "privacy": {
+        "__title": "Privacy"
+    },
     "publisher": {
         "__title": "Editore",
         "authors": {
@@ -387,5 +390,8 @@
         },
         "or": "oppure",
         "with": "Accedi con"
+    },
+    "terms": {
+        "__title": "Termini"
     }
 }
