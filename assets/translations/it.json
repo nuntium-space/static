@@ -333,10 +333,6 @@
             },
             "payment_methods": {
                 "__title": "Metodi di Pagamento",
-                "add": {
-                    "__title": "Aggiungi metodo di pagamento",
-                    "card": "Carta"
-                },
                 "default": "Predefinito",
                 "empty": "Non hai ancora aggiunto nessun metodo di pagamento",
                 "make_default": "Imposta come predefinito"
