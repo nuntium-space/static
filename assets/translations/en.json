@@ -333,10 +333,6 @@
             },
             "payment_methods": {
                 "__title": "Payment Methods",
-                "add": {
-                    "__title": "Add Payment Method",
-                    "card": "Card"
-                },
                 "default": "Default",
                 "empty": "You haven't added any payment method",
                 "make_default": "Make default"
