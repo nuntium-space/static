@@ -26,6 +26,10 @@
         "publisher": {
             "__title": "Publisher"
         },
+        "report": {
+            "__title": "Report",
+            "reason": "Reason"
+        },
         "title": "Title"
     },
     "bundle": {

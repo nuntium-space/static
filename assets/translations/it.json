@@ -26,6 +26,10 @@
         "publisher": {
             "__title": "Editore"
         },
+        "report": {
+            "__title": "Segnala",
+            "reason": "Motivo"
+        },
         "title": "Titolo"
     },
     "bundle": {
