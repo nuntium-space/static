@@ -142,7 +142,8 @@
                     "not_supported": "Unsupported image type"
                 }
             }
-        }
+        },
+        "unknown": "Unknown error"
     },
     "explore": {
         "articles": "Articles",
