@@ -36,6 +36,7 @@
         "title": "Title"
     },
     "bundle": {
+        "__title": "Bundle",
         "details": {
             "__title": "Details",
             "name": "Name"
@@ -70,7 +71,8 @@
         "subscribe": {
             "__title": "Subscribe",
             "choose_option": "Choose an option",
-            "included_publishers": "Included publishers"
+            "included_publishers": "Included publishers",
+            "submit": "Continue"
         }
     },
     "components": {
