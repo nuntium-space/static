@@ -45,6 +45,7 @@
             "add": {
                 "__title": "Aggiungi prezzo",
                 "amount": "Importo",
+                "billing_period": "Periodo di fatturazione",
                 "currency": "Valuta",
                 "messages": {
                     "cannot_update": "Una volta impostato l'importo questo non potrà essere modificato",
@@ -56,9 +57,6 @@
                 "message": "Eventuali abbonamenti ancora attivi continueranno comunque, verrà solo impedita la creazione di nuovi abbonamenti con questo prezzo"
             },
             "archived": "Archiviato",
-            "billing_period": {
-                "month": "mese"
-            },
             "empty": "Non hai aggiunto nessun prezzo"
         },
         "publishers": {
@@ -71,9 +69,6 @@
         },
         "subscribe": {
             "__title": "Abbonati",
-            "billing_period": {
-                "month": "mese"
-            },
             "choose_option": "Scegli un'opzione",
             "included_publishers": "Editori inclusi"
         }
@@ -196,6 +191,11 @@
     "generic": {
         "add": "Aggiungi",
         "archive": "Archivia",
+        "billing_periods": {
+            "month": "Mese",
+            "week": "Settimana",
+            "year": "Anno"
+        },
         "cancel": "Annulla",
         "create": "Crea",
         "confirm": "Conferma",
@@ -376,9 +376,6 @@
                 "empty": "Non sei abbonato a nessun bundle",
                 "details": {
                     "cancels_on": "Si cancella il",
-                    "billing_period": {
-                        "month": "mese"
-                    },
                     "renews_on": "Si rinnova il"
                 },
                 "inactive": "Inattivi",

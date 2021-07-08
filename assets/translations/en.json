@@ -45,6 +45,7 @@
             "add": {
                 "__title": "Add price",
                 "amount": "Amount",
+                "billing_period": "Billing period",
                 "currency": "Currency",
                 "messages": {
                     "cannot_update": "Once the amount is set it cannot be changed",
@@ -56,9 +57,6 @@
                 "message": "Active subscriptions will continue to remain active, only new subscriptions will be blocked from using this price"
             },
             "archived": "Archived",
-            "billing_period": {
-                "month": "month"
-            },
             "empty": "You haven't added any price"
         },
         "publishers": {
@@ -71,9 +69,6 @@
         },
         "subscribe": {
             "__title": "Subscribe",
-            "billing_period": {
-                "month": "month"
-            },
             "choose_option": "Choose an option",
             "included_publishers": "Included publishers"
         }
@@ -196,6 +191,11 @@
     "generic": {
         "add": "Add",
         "archive": "Archive",
+        "billing_periods": {
+            "month": "Month",
+            "week": "Week",
+            "year": "Year"
+        },
         "cancel": "Cancel",
         "create": "Create",
         "confirm": "Confirm",
@@ -376,9 +376,6 @@
                 "empty": "You are not subscribed to any bundle",
                 "details": {
                     "cancels_on": "Cancels on",
-                    "billing_period": {
-                        "month": "month"
-                    },
                     "renews_on": "Renews on"
                 },
                 "inactive": "Inactive",
