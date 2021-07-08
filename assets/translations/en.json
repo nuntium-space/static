@@ -3,6 +3,9 @@
         "__title": "Admin",
         "drafts": {
             "__title": "Drafts"
+        },
+        "reports": {
+            "__title": "Reports"
         }
     },
     "article": {
@@ -189,6 +192,7 @@
         "cancel": "Cancel",
         "create": "Create",
         "confirm": "Confirm",
+        "contact_us": "Contact us",
         "delete": "Delete",
         "edit": "Edit",
         "email": "Email",

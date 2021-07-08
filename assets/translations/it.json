@@ -3,6 +3,9 @@
         "__title": "Amministrazione",
         "drafts": {
             "__title": "Bozze"
+        },
+        "reports": {
+            "__title": "Segnalazioni"
         }
     },
     "article": {
@@ -189,6 +192,7 @@
         "cancel": "Annulla",
         "create": "Crea",
         "confirm": "Conferma",
+        "contact_us": "Contattaci",
         "delete": "Elimina",
         "edit": "Modifica",
         "email": "Email",
