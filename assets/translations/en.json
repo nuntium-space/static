@@ -46,7 +46,14 @@
                 "__title": "Add price",
                 "amount": "Amount",
                 "currency": "Currency",
-                "fee_msg": "We take a <b>20%</b> cut on every transaction"
+                "messages": {
+                    "cannot_update": "Once the amount is set it cannot be changed",
+                    "fee": "We take a <b>20%</b> cut on every transaction",
+                    "taxes": "Required taxes will be added to this amount during checkout"
+                }
+            },
+            "archive": {
+                "message": "Active subscriptions will continue to remain active, only new subscriptions will be blocked from using this price"
             },
             "archived": "Archived",
             "billing_period": {

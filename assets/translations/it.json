@@ -46,7 +46,14 @@
                 "__title": "Aggiungi prezzo",
                 "amount": "Importo",
                 "currency": "Valuta",
-                "fee_msg": "Noi ci teniamo il <b>20%</b> di ogni transazione"
+                "messages": {
+                    "cannot_update": "Una volta impostato l'importo questo non potrà essere modificato",
+                    "fee": "Noi ci teniamo il <b>20%</b> di ogni transazione",
+                    "taxes": "A questo importo verranno aggiunte le tasse necessarie al momento del checkout"
+                }
+            },
+            "archive": {
+                "message": "Eventuali abbonamenti ancora attivi continueranno comunque, verrà solo impedita la creazione di nuovi abbonamenti con questo prezzo"
             },
             "archived": "Archiviato",
             "billing_period": {
