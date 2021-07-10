@@ -2,7 +2,10 @@
 <browserconfig>
     <msapplication>
         <tile>
+            <square70x70logo src="https://static.nuntium.space/favicon/mstile-70x70.png"/>
             <square150x150logo src="https://static.nuntium.space/favicon/mstile-150x150.png"/>
+            <square310x310logo src="https://static.nuntium.space/favicon/mstile-310x310.png"/>
+            <wide310x150logo src="https://static.nuntium.space/favicon/mstile-310x150.png"/>
             <TileColor>#5b2ab1</TileColor>
         </tile>
     </msapplication>
