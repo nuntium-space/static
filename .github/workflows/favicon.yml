@@ -91,4 +91,4 @@ jobs:
       - name: unzip
         uses: montudor/action-zip@master
         with:
-          args: unzip -qq ${{ steps.download.outputs.file-path }} -d assets/favicon
+          args: unzip -qq -o ${{ steps.download.outputs.file-path }} -d assets/favicon # -o forces files to be overwritten
