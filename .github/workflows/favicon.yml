@@ -8,7 +8,7 @@ on:
       - assets/images/logo/svg/icon-square-inverted.svg
 
 jobs:
-  deploy:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
