@@ -1,0 +1,94 @@
+name: Favicon
+
+on:
+  push:
+    paths:
+      - .github/workflows/favicon.yml
+      - assets/images/logo/svg/icon-square.svg
+      - assets/images/logo/svg/icon-square-inverted.svg
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: base64 encode
+        id: base64_encode
+        uses: frostebite/File-To-Base64@master
+        with:
+          filePath: assets/images/logo/svg/icon-square.svg
+
+      - name: base64 encode safari pinned tab
+        id: base64_encode_safari_pinned_tab
+        uses: frostebite/File-To-Base64@master
+        with:
+          filePath: assets/images/logo/svg/icon-square-inverted.svg
+
+      - name: generate
+        uses: fjogeleit/http-request-action@master
+        with:
+          url: https://realfavicongenerator.net/api/favicon
+          method: POST
+          data: '{
+            "favicon_generation": {
+              "api_key": "${{ secrets.REAL_FAVICON_GENERATOR_API_KEY }}",
+              "master_picture": {
+                "type": "inline",
+                "url": "${{ steps.base64_encode.outputs.base64 }}"
+              },
+              "files_location": {
+                "type": "path",
+                "path": "https://static.nuntium.space/favicon"
+              },
+              "favicon_design": {
+                "desktop_browser": {},
+                "ios": {
+                  "picture_aspect": "background_and_margin",
+                  "margin": "4",
+                  "background_color": "#123456",
+                  "startup_image": {
+                    "master_picture": {
+                      "type": "url",
+                      "url": "http://example.com/pic_for_ios_startup.png"
+                    },
+                    "background_color": "#654321"
+                  },
+                  "assets": {
+                    "ios6_and_prior_icons": false,
+                    "ios7_and_later_icons": true,
+                    "precomposed_icons": false,
+                    "declare_only_default_icon": true
+                  }
+                },
+                "windows": {
+                  "picture_aspect": "white_silhouette",
+                  "background_color": "#5b2ab1",
+                },
+                "android_chrome": {
+                  "picture_aspect": "shadow",
+                  "manifest": {
+                    "name": "nuntium",
+                    "start_url": "/",
+                    "display": "standalone",
+                    "theme_color": "#5b2ab1"
+                  }
+                },
+                "safari_pinned_tab": {
+                  "master_picture": {
+                    "type": "inline",
+                    "url": "${{ steps.base64_encode_safari_pinned_tab.outputs.base64 }}"
+                  },
+                  "picture_aspect": "black_and_white",
+                  "threshold": 100,
+                  "theme_color": "#5b2ab1"
+                },
+              },
+              "settings": {
+                "compression": "3",
+                "scaling_algorithm": "Mitchell",
+                "error_on_image_too_small": true
+              }
+            }
+          }'
