@@ -50,7 +50,7 @@ jobs:
                   "picture_aspect": "no_change"
                 },
                 "windows": {
-                  "picture_aspect": "white_silhouette",
+                  "picture_aspect": "no_change",
                   "background_color": "#5b2ab1"
                 },
                 "android_chrome": {
