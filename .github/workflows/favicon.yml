@@ -27,10 +27,12 @@ jobs:
           filePath: assets/images/logo/svg/icon-square-inverted.svg
 
       - name: generate
+        id: generate
         uses: fjogeleit/http-request-action@master
         with:
           url: https://realfavicongenerator.net/api/favicon
           method: POST
+          timeout: 45000 # 45 seconds
           data: '{
             "favicon_generation": {
               "api_key": "${{ secrets.REAL_FAVICON_GENERATOR_API_KEY }}",
@@ -77,3 +79,16 @@ jobs:
               }
             }
           }'
+
+      - name: download
+        id: download
+        uses: carlosperate/download-file-action@master
+        with:
+          file-url: ${{ steps.generate.outputs.response.favicon_generation_result.favicon.package_url }}
+          file-name: favicon.zip
+          location: ${{ github.runner_temp }}
+
+      - name: unzip
+        uses: montudor/action-zip@master
+        with:
+          args: unzip -qq ${{ steps.download.outputs.file-path }} -d assets/favicon
