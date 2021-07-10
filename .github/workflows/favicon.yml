@@ -36,7 +36,7 @@ jobs:
               "api_key": "${{ secrets.REAL_FAVICON_GENERATOR_API_KEY }}",
               "master_picture": {
                 "type": "inline",
-                "url": "${{ steps.base64_encode.outputs.base64 }}"
+                "content": "${{ steps.base64_encode.outputs.base64 }}"
               },
               "files_location": {
                 "type": "path",
@@ -51,7 +51,7 @@ jobs:
                   "startup_image": {
                     "master_picture": {
                       "type": "url",
-                      "url": "http://example.com/pic_for_ios_startup.png"
+                      "content": "http://example.com/pic_for_ios_startup.png"
                     },
                     "background_color": "#654321"
                   },
