@@ -97,4 +97,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@master
         with:
           file_pattern: assets/favicon
-          commit_message: Apply formatting changes
+          commit_message: Update favicon files
