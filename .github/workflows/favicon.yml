@@ -1,0 +1,91 @@
+name: Favicon
+
+on:
+  push:
+    paths:
+      - .github/workflows/favicon.yml
+      - assets/images/logo/svg/icon-circle.svg
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: base64 encode
+        id: base64_encode
+        uses: frostebite/File-To-Base64@master
+        with:
+          filePath: assets/images/logo/svg/icon-circle.svg
+
+      - name: generate
+        id: generate
+        uses: fjogeleit/http-request-action@master
+        with:
+          url: https://realfavicongenerator.net/api/favicon
+          method: POST
+          timeout: 45000 # 45 seconds
+          data: '{
+            "favicon_generation": {
+              "api_key": "${{ secrets.REAL_FAVICON_GENERATOR_API_KEY }}",
+              "master_picture": {
+                "type": "inline",
+                "content": "${{ steps.base64_encode.outputs.base64 }}"
+              },
+              "files_location": {
+                "type": "path",
+                "path": "https://static.nuntium.space/favicon"
+              },
+              "favicon_design": {
+                "desktop_browser": {},
+                "ios": {
+                  "picture_aspect": "background_and_margin",
+                  "margin": 0,
+                  "backgound_color": "#5b2ab1"
+                },
+                "windows": {
+                  "picture_aspect": "no_change",
+                  "background_color": "#5b2ab1"
+                },
+                "android_chrome": {
+                  "picture_aspect": "no_change",
+                  "manifest": {
+                    "name": "nuntium",
+                    "start_url": "/",
+                    "display": "standalone",
+                    "theme_color": "#5b2ab1"
+                  }
+                },
+                "safari_pinned_tab": {
+                  "picture_aspect": "black_and_white",
+                  "threshold": 50,
+                  "theme_color": "#5b2ab1"
+                }
+              },
+              "settings": {
+                "compression": "3",
+                "scaling_algorithm": "Mitchell",
+                "error_on_image_too_small": true
+              }
+            }
+          }'
+
+      - name: download
+        id: download
+        uses: carlosperate/download-file-action@master
+        with:
+          file-url: ${{ fromJSON(steps.generate.outputs.response).favicon_generation_result.favicon.package_url }}
+          file-name: favicon.zip
+          location: ./tmp
+
+      - name: unzip
+        uses: montudor/action-zip@master
+        with:
+          args: unzip -qq -o ${{ steps.download.outputs.file-path }} -d assets/favicon # -o forces files to be overwritten
+
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@master
+        with:
+          file_pattern: assets/favicon
+          commit_message: Update favicon files
