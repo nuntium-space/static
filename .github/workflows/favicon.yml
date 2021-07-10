@@ -54,7 +54,7 @@ jobs:
                   "background_color": "#5b2ab1"
                 },
                 "android_chrome": {
-                  "picture_aspect": "shadow",
+                  "picture_aspect": "no_change",
                   "manifest": {
                     "name": "nuntium",
                     "start_url": "/",
