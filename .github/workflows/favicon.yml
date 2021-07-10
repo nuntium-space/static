@@ -4,8 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/favicon.yml
-      - assets/images/logo/svg/icon-square.svg
-      - assets/images/logo/svg/icon-square-inverted.svg
+      - assets/images/logo/svg/icon-circle.svg
 
 jobs:
   generate:
@@ -18,13 +17,7 @@ jobs:
         id: base64_encode
         uses: frostebite/File-To-Base64@master
         with:
-          filePath: assets/images/logo/svg/icon-square.svg
-
-      - name: base64 encode safari pinned tab
-        id: base64_encode_safari_pinned_tab
-        uses: frostebite/File-To-Base64@master
-        with:
-          filePath: assets/images/logo/svg/icon-square-inverted.svg
+          filePath: assets/images/logo/svg/icon-circle.svg
 
       - name: generate
         id: generate
@@ -47,7 +40,9 @@ jobs:
               "favicon_design": {
                 "desktop_browser": {},
                 "ios": {
-                  "picture_aspect": "no_change"
+                  "picture_aspect": "background_and_margin",
+                  "margin": 0,
+                  "backgound_color": "#5b2ab1"
                 },
                 "windows": {
                   "picture_aspect": "no_change",
@@ -63,10 +58,6 @@ jobs:
                   }
                 },
                 "safari_pinned_tab": {
-                  "master_picture": {
-                    "type": "inline",
-                    "content": "${{ steps.base64_encode_safari_pinned_tab.outputs.base64 }}"
-                  },
                   "picture_aspect": "black_and_white",
                   "threshold": 100,
                   "theme_color": "#5b2ab1"
