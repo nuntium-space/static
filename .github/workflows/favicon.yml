@@ -84,7 +84,7 @@ jobs:
         id: download
         uses: carlosperate/download-file-action@master
         with:
-          file-url: ${{ steps.generate.outputs.response.favicon_generation_result.favicon.package_url }}
+          file-url: ${{ fromJSON(steps.generate.outputs.response).favicon_generation_result.favicon.package_url }}
           file-name: favicon.zip
           location: ${{ github.runner_temp }}
 
