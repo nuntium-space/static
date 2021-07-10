@@ -83,7 +83,7 @@ jobs:
                   "picture_aspect": "black_and_white",
                   "threshold": 100,
                   "theme_color": "#5b2ab1"
-                },
+                }
               },
               "settings": {
                 "compression": "3",
