@@ -64,7 +64,7 @@ jobs:
                 },
                 "windows": {
                   "picture_aspect": "white_silhouette",
-                  "background_color": "#5b2ab1",
+                  "background_color": "#5b2ab1"
                 },
                 "android_chrome": {
                   "picture_aspect": "shadow",
