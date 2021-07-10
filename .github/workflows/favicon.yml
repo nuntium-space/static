@@ -86,7 +86,7 @@ jobs:
         with:
           file-url: ${{ fromJSON(steps.generate.outputs.response).favicon_generation_result.favicon.package_url }}
           file-name: favicon.zip
-          location: ${{ github.runner_temp }}
+          location: ${{ runner.temp }}
 
       - name: unzip
         uses: montudor/action-zip@master
