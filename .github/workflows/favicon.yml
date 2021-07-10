@@ -92,3 +92,9 @@ jobs:
         uses: montudor/action-zip@master
         with:
           args: unzip -qq -o ${{ steps.download.outputs.file-path }} -d assets/favicon # -o forces files to be overwritten
+
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@master
+        with:
+          file_pattern: assets/favicon
+          commit_message: Apply formatting changes
