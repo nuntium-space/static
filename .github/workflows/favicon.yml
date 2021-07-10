@@ -59,7 +59,7 @@ jobs:
                 },
                 "safari_pinned_tab": {
                   "picture_aspect": "black_and_white",
-                  "threshold": 100,
+                  "threshold": 50,
                   "theme_color": "#5b2ab1"
                 }
               },
