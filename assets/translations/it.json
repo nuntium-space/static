@@ -198,6 +198,11 @@
             "week": "Settimana",
             "year": "Anno"
         },
+        "billing_periods_per": {
+            "month": "al mese",
+            "week": "alla settimana",
+            "year": "all'anno"
+        },
         "cancel": "Annulla",
         "create": "Crea",
         "confirm": "Conferma",

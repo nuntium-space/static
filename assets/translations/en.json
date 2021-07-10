@@ -198,6 +198,11 @@
             "week": "Week",
             "year": "Year"
         },
+        "billing_periods_per": {
+            "month": "per month",
+            "week": "per week",
+            "year": "per year"
+        },
         "cancel": "Cancel",
         "create": "Create",
         "confirm": "Confirm",
