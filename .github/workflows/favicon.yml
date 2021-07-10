@@ -63,7 +63,7 @@ jobs:
                 "safari_pinned_tab": {
                   "master_picture": {
                     "type": "inline",
-                    "url": "${{ steps.base64_encode_safari_pinned_tab.outputs.base64 }}"
+                    "content": "${{ steps.base64_encode_safari_pinned_tab.outputs.base64 }}"
                   },
                   "picture_aspect": "black_and_white",
                   "threshold": 100,
