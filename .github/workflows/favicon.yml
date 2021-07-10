@@ -45,22 +45,7 @@ jobs:
               "favicon_design": {
                 "desktop_browser": {},
                 "ios": {
-                  "picture_aspect": "background_and_margin",
-                  "margin": "4",
-                  "background_color": "#123456",
-                  "startup_image": {
-                    "master_picture": {
-                      "type": "url",
-                      "content": "http://example.com/pic_for_ios_startup.png"
-                    },
-                    "background_color": "#654321"
-                  },
-                  "assets": {
-                    "ios6_and_prior_icons": false,
-                    "ios7_and_later_icons": true,
-                    "precomposed_icons": false,
-                    "declare_only_default_icon": true
-                  }
+                  "picture_aspect": "no_change"
                 },
                 "windows": {
                   "picture_aspect": "white_silhouette",
