@@ -52,7 +52,7 @@ jobs:
                   "picture_aspect": "no_change",
                   "manifest": {
                     "name": "nuntium",
-                    "start_url": "/",
+                    "start_url": "https://nuntium.space",
                     "display": "standalone",
                     "theme_color": "#5b2ab1"
                   }
