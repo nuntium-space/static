@@ -302,6 +302,12 @@
                 "type": "Type",
                 "value": "Value"
             }
+        },
+        "stats": {
+            "__title": "Stats",
+            "views": {
+                "__title": "Views"
+            }
         }
     },
     "publisher_public_page": {
