@@ -306,7 +306,8 @@
         "stats": {
             "__title": "Stats",
             "views": {
-                "__title": "Views"
+                "__title": "Views",
+                "unique": "Unique views"
             }
         }
     },

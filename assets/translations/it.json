@@ -306,7 +306,8 @@
         "stats": {
             "__title": "Statistiche",
             "views": {
-                "__title": "Visualizzazioni"
+                "__title": "Visualizzazioni",
+                "unique": "Visualizzazioni uniche"
             }
         }
     },
